@@ -8,6 +8,7 @@ O aplicativo tem como propósito desenvolver um ambiente imersivo, onde a pessoa
 <!--ts-->
    * Java
    * Spring Boot
+   * Spring Data
    * Android
    * Android Studio
    * MySQL
