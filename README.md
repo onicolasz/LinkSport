@@ -1,5 +1,3 @@
-# LinkSport
-
 # 💡 Sobre
 No ano de 2023 eu, Nícolas Barros de souza, aluno do técnico em informática no IFSul - campus Sapucaia do Sul, cursando o 4° ano do ensino médio. Desenvolvi o meu trabalho de conclusão de curso, o LinkSport.
 
