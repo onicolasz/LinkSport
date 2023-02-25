@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AovivoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabAovivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green1"
+            android:elevation="8dp"
+            app:cardElevation="8dp"
+            app:tabIconTint="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabRippleColor="@color/white"
+            app:tabTextColor="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabEventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eventos" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabNoticias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notícias" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</FrameLayout>

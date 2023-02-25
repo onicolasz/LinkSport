@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green2"
+    android:backgroundTint="@color/green2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detalhesCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/btnVoltarHome2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:backgroundTint="#673AB7"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_voltar_foreground"
+                app:tint="@color/green2" />
+
+            <TextView
+                android:id="@+id/detalheTextTitulo"
+                style="@android:style/TextAppearance.Holo.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Titulo"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detalheTextData"
+                    style="@android:style/TextAppearance.Holo.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02/11/2022"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detalheTextHora"
+                    style="@android:style/TextAppearance.Holo.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="20:30"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detalheTextEventoConcluido"
+                style="@android:style/TextAppearance.Holo.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_status_hoje"
+                android:text="Evento"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detalheImgStatus"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="left"
+                    app:srcCompat="@drawable/ic_concluir_foreground" />
+
+                <TextView
+                    android:id="@+id/detalheTextStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-12dp"
+                    android:text="Status"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/detalheBtnApagar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_deletar_foreground" />
+
+                <TextView
+                    android:id="@+id/detalheTextApagar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-12dp"
+                    android:text="Apagar card"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/detalheBtnCompartilharDetalhes"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="left"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_compartilhar_foreground" />
+
+                <TextView
+                    android:id="@+id/detalheTextCompartilhar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-15dp"
+                    android:text="Compartilhar"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
